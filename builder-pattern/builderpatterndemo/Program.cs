@@ -1,16 +1,22 @@
 ﻿using System;
 
+
 namespace builderpatterndemo
 {
-    internal static class Program
+    public static class Program
     {
         private static void Main(string[] args)
         {
-            if (args is null)
-            {
-                throw new ArgumentNullException(nameof(args));
-            }
-            Console.ReadLine();
+            System.Console.WriteLine("HTML Element Builder");
+            var builderDemo = new HTMLElementBuilderDemo();
+            var html = builderDemo.BuildList();
+            System.Console.WriteLine(html);
+
+            System.Console.WriteLine("\nPerson Builder");
+
+            var facadeBuilder = new BuilderFacadeDemo();
+            var person = facadeBuilder.BuildPerson();
+            System.Console.WriteLine(person);
         }
     }
 }
