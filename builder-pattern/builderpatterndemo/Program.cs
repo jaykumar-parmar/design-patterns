@@ -1,11 +1,10 @@
 ﻿using System;
 
-
 namespace builderpatterndemo
 {
     public static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             System.Console.WriteLine("HTML Element Builder");
             var builderDemo = new HTMLElementBuilderDemo();
